@@ -17,4 +17,11 @@ public class Calculator {
         }
         return (double) a / b;
     }
+    public double log(int a, int b) {
+        if (a <= 0 || a == 1 || b <= 0) {
+            throw new IllegalArgumentException("Base must be greater than 0 and not equal to 1, and number must be positive.");
+        }
+        return Math.log(b) / Math.log(a);
+    }
+
 }
